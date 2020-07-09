@@ -1,0 +1,8 @@
+body {
+    background-image: url('me.jpg') !important;
+}
+
+#me img{
+    background-repeat: repeat-x !important;
+    background-repeat: repeat-y !important;
+}
