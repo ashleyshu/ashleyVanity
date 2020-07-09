@@ -1,0 +1,21 @@
+{
+  "name": "Ashley Vanity!",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Changes the imgs in webpages to a picture of me!",
+  "default_locale": "en",
+  "permissions": [
+    "tabs",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["inject.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "me.jpg"
+  ]
+}
